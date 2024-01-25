@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+  
+a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  
+a:hover {
+    color: #F29325;
+}
+  
+ul {
+    list-style: none;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+    border: 1px solid #dddddd5e;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    top: -2px;
+    padding: 3px 5px;
+    position: relative;
+    height: 18px;
+    width: 40px;
+    transform: scale(1);
+}
+
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(26px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.animation-header {
+    animation: headeranimation 2s ease 0s 1 normal forwards;
+}
+
+#navbar {
+    background-color: #fff;
+    backdrop-filter: blur(2.6px);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar-inner #logo {
+    cursor: pointer;
+    border-top: 1px  #F29325;
+
+}
+  
+#navbar-inner {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#navbar-inner #logo {
+    max-width: 90px;
+}
+  
+#navbar-links {
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar-links a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75)
+}
+
+#navbar-links a:hover {
+    transition: 0.5s;
+    color: #F29325;
+    border-bottom: 1px solid #F29325;
+}
+
+#navbar-links .contact {
+    /* position: absolute; */
+    border: 2px solid #F29325;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+#navbar-links .contact:hover {
+    background-color: #dddddd5e;
+    border: 2px solid #F29325;
+}
+  
+.container {
+    background-color: #fff;
+    display: flex;
+    gap: 3rem;
+    padding: 10rem 3rem;
+    max-width: auto;
+    max-height: auto;
+    margin: 0 auto;
+}
+  
+.container img {
+    border-radius: 50%;
+    padding: 0 4rem;
+    max-width: 400px;
+}
+  
+#main-container {
+    flex: 3 0 0;
+    text-align: center;
+}
+  
+.info {
+    display: flex;
+}
+
+.title {
+    color: #000;
+    font-size: 50px;
+    font-weight: 900;
+    min-width: 250px;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+  
+#text {
+    text-align: center;
+    color: #363636;
+    margin: 0 auto;
+    max-width: 40%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+#main-container .message {
+    margin: 7rem 3rem 3rem;
+    font-size: 35px;
+}
+
+#main-container .message h3 {
+    padding-bottom: 2rem;
+}
+
+#main-container span {
+    color: #F29325;
+}
+  
+#footer {
+    border-top: 1px solid #dfdfdf;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #F29325;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@keyframes headeranimation {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
