@@ -249,6 +249,11 @@ ul {
         display: none;
     }
 
+    #navbar-links {
+        gap: 0.5rem;
+        align-items: center;
+    }
+
     .container {
         max-width: 100%;
         display: flex;
@@ -259,7 +264,7 @@ ul {
 
     .container img {
         width: 200px;
-        padding-top: 30px;
+        padding-top: 3rem;
     }
 
     .container .title {
@@ -277,14 +282,6 @@ ul {
         display: inline;
         font-size: 20px;
         max-width: 80%;
-    }
-
-    #navbar-inner {
-        margin: 0;
-    }
-
-    #navbar-links {
-        gap: 0.5rem;
     }
 
 }
