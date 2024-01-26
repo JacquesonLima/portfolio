@@ -235,12 +235,14 @@ ul {
 /* mobile */
 @media (max-width: 450px) {   
     #navbar {
-        padding: 1rem 1.5rem;
+        padding: 1.5rem 1.5rem;
         max-width: 90%;
     }
 
     #navbar-inner {
-        max-width: 90%;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     #navbar-inner #logo {
@@ -257,7 +259,7 @@ ul {
 
     .container img {
         width: 200px;
-        padding-top: 0px;
+        padding-top: 30px;
     }
 
     .container .title {
