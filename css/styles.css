@@ -249,8 +249,8 @@ ul {
     margin: 1rem 10px;
 }
 
-.projects input {
-    display: block;
+.projects button {
+    display: inline;
     width: 90%;
     margin: 0 auto;
     padding: 0.5rem;
@@ -260,7 +260,7 @@ ul {
     border-radius: 5px;
 }
 
-.projects input:hover {
+.projects button:hover {
     cursor: pointer;
     color: #F29325;
     transition: 0.5s;
