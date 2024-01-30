@@ -321,8 +321,9 @@ ul {
     }
 
     #navbar-inner {
-        justify-content: space-around;
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        width: auto;
         margin: 0 auto;
     }
 
@@ -333,6 +334,10 @@ ul {
     #navbar-links {
         gap: 0.5rem;
         align-items: center;
+    }
+
+    #navbar-links li a {
+        font-size: 15px;
     }
 
     .container {
@@ -365,8 +370,21 @@ ul {
         max-width: 80%;
     }
 
+    #main-container {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-container .message {
+        font-weight: 300;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
     .projects-container h2 {
-        margin-bottom: 64px;
+        margin: 0px 10px 64px;
     }
 
     .projects ul {
