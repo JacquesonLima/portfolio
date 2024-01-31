@@ -194,6 +194,9 @@ ul {
 
 .projects-container {
     background-color: var(--container-background);
+    animation: moveToRight 2s ease-in-out ;
+    animation-delay: 1000ms;
+    opacity: 1;
 }
 
 .projects-container h2 {
@@ -286,6 +289,16 @@ ul {
     color: var(--a-color-hover);
     padding: 1rem;
     background-color: var(--background);
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 @keyframes headeranimation {
