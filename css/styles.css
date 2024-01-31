@@ -22,8 +22,6 @@ body {
     --projects-border-hover: #e4e4e4;
     --background-button: #ececec;
 
-    --switch-p1-img: url(./img/hein-page.png);
-
     height: 100%;
     transition: .3s;
 }
